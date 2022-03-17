@@ -1,0 +1,62 @@
+.gris{
+    background-color: lightgrey;
+}
+.oscuro{
+    background-color: grey;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    /* outline: 1px solid black; */
+}
+.container-botonera{
+    flex-grow: 0.5;
+    outline: 1px solid red;
+}
+.container-totales{
+    flex-grow: 1;
+    outline: 1px solid green;
+    padding: 1rem;
+}
+.cable-botonera {
+    display: flex;
+    width: 100%;   
+    outline: 1px solid black;
+}
+.cabecera {
+    flex-grow: 1;
+}
+.megas-botonera {
+    display: flex;
+    width: 100%;   
+    outline: 1px solid black;
+}
+.wrapp{
+    flex-grow: 1;
+}
+.porcentajes{
+    align-self: flex-end;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+.active{
+    appearance: none;
+    border: none;
+    background: rgb(95, 95, 106);
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+    margin-top: 0;
+}
