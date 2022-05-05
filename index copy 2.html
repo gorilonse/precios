@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      crossorigin
+      
+    />
+    <title>Precios</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <h1>Precios</h1>
+    </header>
+    <div class="content">
+      <div class="selectores">
+        <div>
+          <label for="localidad">Seleccione la localidad:&nbsp;</label>
+          <select id="localidad">
+            <option value="san salvador">San Salvador</option>
+            <option value="palpala">Palpala</option>
+          </select>
+        </div>
+        <div>
+          <label for="lista">Seleccione la lista de precios:&nbsp;</label>
+          <select id="lista">
+            <option value="marzo 22">Marzo 2022</option>
+            <option value="diciembre 21">Diciembre 2021</option>
+          </select>
+        </div>
+      </div>
+      <div class="container-precios">
+        <!-- Cable -->
+        <div class="container-cable">
+          <i class="fa-solid fa-plus"></i>
+          <div class="recuadro  cable cabecera">
+            <div class="item"><span>Cable</span></div>
+          </div>
+          <div class="recuadro active">
+            <div class="item">TV</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+              <span class="porcentaje-data" value="0">0%</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+          <div class="recuadro active">
+            <div class="item">Go</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+              <span class="porcentaje-data" value="0">0%</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Go Adicional</div>
+          </div>
+          <div class="recuadro active">
+            <div class="item">Futbol</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">HBO</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Adultos</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Boca Adicional</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+                <span>2</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+        </div>
+        <!-- Internet -->
+        <div class="container-internet">
+          <div class="recuadro internet cabecera">
+            <div class="item">Internet</div>
+          </div>
+          <div class="recuadro active">
+            <div class="item">Internet 50MB</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+              <span class="porcentaje-data" value="0">0%</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Internet 100MB</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+              <span class="porcentaje-data" value="0">0%</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Internet 200MB</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Internet 10MB</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Internet 20MB</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Internet 30MB</div>
+          </div>
+          <div class="recuadro">
+            <div class="item">Router</div>
+            <div class="stepper">
+              <span class="material-icons">remove</span>
+              <span class="porcentaje-data" value="0">0%</span>
+              <span class="material-icons">add</span>
+            </div>
+          </div>
+        </div>
+        <!-- Totales -->
+        <div class="container-totales">
+          <div class="recuadro total cabecera">
+            <div class="item">Total</div>
+          </div>
+          <div class="resumen">
+            <h3>Total Final:<span id="total">$3720</span></h3>
+            <h6>Total sin descuento: $4000</h6>
+            <h6>Monto descontado: -$1280</h6>
+
+            <h4>Detalle</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Lista</th>
+                  <th>Desc.</th>
+                  <th>Final</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cable</td>
+                  <td>$1900</td>
+                  <td>-$500</td>
+                  <td>$1400</td>
+                </tr>
+                <tr>
+                  <td>Go</td>
+                  <td>$500</td>
+                  <td>-</td>
+                  <td>$500</td>
+                </tr>
+                <tr>
+                  <td>Internet</td>
+                  <td>$2600</td>
+                  <td>-$780</td>
+                  <td>$1820</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td>$4000</td>
+                  <td>-$1280</td>
+                  <td>$3720</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

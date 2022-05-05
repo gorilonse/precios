@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Precios C4</title>
+  </head>
+  <body>
+    <h1>Precios</h1>
+    <a href="muestra.html">Muestra</a>
+    <fieldset>
+      <legend>Lista de Precios</legend>
+      <select>
+        <option value="marzo 22">Marzo 2022</option>
+        <option value="diciembre 21">Diciembre 2021</option>
+      </select>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Zona</legend>
+
+      <select>
+        <option value="san salvador">San Salvador</option>
+        <option value="palpala">Palpala</option>
+      </select>
+    </fieldset>
+    <br />
+    <div class="info">
+      <div class="container-botonera gris">
+        <div class="cable-botonera">
+          <button id="cable-btn" class="cabecera">Cable</button>
+          <button id="cable-40" class="40 ">40%</button>
+          <button id="cable-30" class="30 ">30%</button>
+          <button id="cable-20" class="20 ">20%</button>
+        </div>
+  
+        <div class="cable-botonera">
+          <button id="internet50-btn" class="cabecera">Internet</button>
+          <button id="internet50-40" class="40">40%</button>
+          <button id="internet50-30" class="30">30%</button>
+          <button id="internet50-20" class="20">20%</button>
+        </div>
+        <!-- <div class="megas-botonera">
+            <div class="wrapp">
+                <button>10 mb</button>
+                <button>20 mb</button>
+                <button>30 mb</button>
+                <button>50 mb</button>
+                <button>100 mb</button>
+                <button>200 mb</button>
+            </div>
+            <div class="porcentajes">
+                <button id="internet50-40" class="40 ">40%</button>
+                <button id="internet50-30" class="30 ">30%</button>
+                 <button id="internet50-20" class="20 ">20%</button>
+            </div>
+        </div> -->
+
+
+        <div class="cable-botonera">
+          <button id="hd-btn" class="cabecera">HD</button>
+          <button id="hd-40">40%</button>
+          <button id="hd-30">30%</button>
+          <button id="hd-20">20%</button>
+        </div>
+
+        <div class="cable-botonera">
+          <button id="futbol-btn" class="cabecera">Pack Fútbol</button>
+        </div>
+        <div class="cable-botonera">
+          <button id="hbo-btn" class="cabecera">HBO</button>
+        </div>
+        <div class="cable-botonera">
+          <button id="adulto-btn" class="cabecera">Adultos</button>
+        </div>
+      </div>
+      <div class="container-totales oscuro">
+        <h2>Totales<span id="total"></span></h2>
+        <h4>Detalle</h4>
+        <ul class="container-detalle">
+          <li id="totalcable"></li>
+          <li id="totalnet"></li>
+          <li id="totalhd"></li>
+          <li id="totalfutbol"></li>
+          <li id="totalhbo"></li>
+          <li id="totaladultos"></li>
+        </ul>
+        <h4>Total de descuentos</h4>
+      </div>
+    </div>
+    <div class="container">
+      <table>
+        <tr>
+          <th>Detalle</th>
+          <th>Precio Lista</th>
+          <th>Descuento</th>
+          <th>Precio con descuento</th>
+          <th>Porcentaje</th>
+          <th>Politica</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

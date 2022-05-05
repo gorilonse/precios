@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head lang="es">
+		<title>Nueva señal - El Cuatro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Nueva señal">
+		<meta name="author" content="elcuatro">
+		<meta name="robots" content="noindex">
+
+		<!-- Los estilos -->
+		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+		<link href="https://www.elcuatro.com/views/admin/layout/default/css/bootstrap.min.css?80.2" rel="stylesheet">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+		<li…
+<!DOCTYPE html>
+<html>
+	<head lang="es">
+		<title>Nueva señal - El Cuatro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Nueva señal">
+		<meta name="author" content="elcuatro">
+		<meta name="robots" content="noindex">
+
+		<!-- Los estilos -->
+		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+		<link href="https://www.elcuatro.com/views/admin/layout/default/css/bootstrap.min.css?80.2" rel="stylesheet">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="https://www.elcuatro.com/views/admin/layout/default/css/custom.css?80.2" rel="stylesheet">
+
+		<style>
+			.bd-placeholder-img{
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px){
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+	    </style>
+
+		<script src="https://kit.fontawesome.com/bac2bf0b18.js" crossorigin="anonymous"></script>
+		<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+
+	</head>
+	<body>
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="https://www.elcuatro.com/">
+				<img src="https://s3.amazonaws.com/static-c4-1/assets/img/logos/elcuatro-logo-light-150x43.png"
+				srcset="https://s3.amazonaws.com/static-c4-1/assets/img/logos/elcuatro-logo-light-150x43@2x.png 2x"
+				alt="Company logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		    </button>
+
+			
+		    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		        <ul class="navbar-nav mr-auto">
+															<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/">Inicio</a>
+					</li>
+																				<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+						<div class="dropdown-menu">
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/home/slider">Slider</a>
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/home/banner">Banner</a>
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/home/estrenos">Estrenos</a>
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/landing">Landing Pages</a>
+													</div>
+					</li>
+																				<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/promociones">Promociones</a>
+					</li>
+																				<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/productos">Productos</a>
+					</li>
+																				<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/grilla">Grilla</a>
+					</li>
+																				<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/faq">FAQ</a>
+					</li>
+																				<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ventas <span class="caret"></span></a>
+						<div class="dropdown-menu">
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/ventas">Gestión de ventas</a>
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/atc">Armá tu combo</a>
+																					<a class="dropdown-item" href="https://www.elcuatro.com/admin/facturacion">Facturación</a>
+													</div>
+					</li>
+																				<li class="nav-item">
+						<a class="nav-link" href="https://www.elcuatro.com/admin/postulantes">Postulantes</a>
+					</li>
+												        </ul>
+
+				<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+										<div class="btn-group" role="group">
+						<button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							gbaldini						</button>
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop2">							
+							<a class="dropdown-item" href="https://www.elcuatro.com/admin/login/cerrar">Cerrar sesión</a>
+						</div>
+					</div>
+				</div>
+		    </div>
+					</div>
+	</nav>
+
+		<div class="container bg-white">
+		<div class="row">
+			<div class="col-md-12">
+				<nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://www.elcuatro.com/admin/">Inicio</a></li><li class="breadcrumb-item"><a href="https://www.elcuatro.com/admin/Ventas">Ventas</a></li><li class="breadcrumb-item active">Nuevo</li></ol></nav>			</div>
+		</div>
+	</div>
+	<section class="vendedor">
+	<div class="container bg-white">
+		<div class="row">
+			<div class="col-lg-12 py-4">
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="localidad">Seleccione la localidad:&nbsp;</label>
+						<select class="form-control" id="localidad">
+							<option value="SAN SALVADOR DE JUJUY" selected>SAN SALVADOR DE JUJUY</option><option value="PALPALA">PALPALA</option>						</select>
+						<input type="hidden" name="url" id="url" value="https://www.elcuatro.com/admin/ventas/nuevo">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-4 primero">
+				<div class="titulo">Televisión</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="1" name="cable" value="TV" data-check="false" data-get-set="false" data-precio="1900.00">
+						<div class="box">
+							<span>TV</span>
+						</div>
+					</label>
+				</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="3" name="cable" value="Go" data-check="false" data-get-set="false" data-precio="500.00">
+						<div class="box">
+							<span>Go</span>
+						</div>
+					</label>
+				</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="21" name="cable" value="TV + Go" data-check="false" data-get-set="false" data-precio="2400.00">
+						<div class="box">
+							<span>TV + Go</span>
+						</div>
+					</label>
+				</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="65" name="cable" value="Go Adicional" data-check="false" data-get-set="false" data-precio="280.00">
+						<div class="box">
+							<span>Go Adicional</span>
+						</div>
+					</label>
+				</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="135" name="cable" value="TV Especial" data-check="false" data-get-set="false" data-precio="1900.00">
+						<div class="box">
+							<span>TV Especial</span>
+						</div>
+					</label>
+				</div>
+								<div class="options">
+									<label>
+						<input type="radio" id="136" name="cable" value="Go Especial" data-check="false" data-get-set="false" data-precio="500.00">
+						<div class="box">
+							<span>Go Especial</span>
+						</div>
+					</label>
+				</div>
+								<div class="subtitulo">Adicionales</div>
+				<div class="adicionales">
+										<div class="">
+						<div class="options">
+							<label>
+								<input type="checkbox" name="adicional" id="pack-14" data-check="false" data-precio="630.00" value="HBO Pack" disabled="disabled">
+								<div class="box">
+									<span><img src="https://www.elcuatro.com/public/uploads/productos/ed684132b8103d88ca92.png"></span>
+								</div>
+							</label>
+						</div>
+					</div>
+										<div class="">
+						<div class="options">
+							<label>
+								<input type="checkbox" name="adicional" id="pack-28" data-check="false" data-precio="270.00" value="Hot Pack" disabled="disabled">
+								<div class="box">
+									<span><img src="https://www.elcuatro.com/public/uploads/productos/1b2b2486b0ea0d65635b.png"></span>
+								</div>
+							</label>
+						</div>
+					</div>
+										<div class="">
+						<div class="options">
+							<label>
+								<input type="checkbox" name="adicional" id="pack-139" data-check="false" data-precio="1120.00" value="Pack Futbol" disabled="disabled">
+								<div class="box">
+									<span><img src="https://www.elcuatro.com/public/uploads/productos/ca330264f9a1db58f9f6.png"></span>
+								</div>
+							</label>
+						</div>
+					</div>
+										<div class="clear"></div>
+				</div>
+			</div>
+            <div class="col-lg-4 col-md-4 segundo">
+                <div class="titulo">Internet</div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="99" name="internet" value="Agrega Internet 50 MB" data-check="false" data-get-set="false" data-precio="2600.00">
+                        <div class="box">
+                            <span>Agrega Internet 50 MB</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="97" name="internet" value="Internet 50 MB" data-check="false" data-get-set="false" data-precio="2600.00">
+                        <div class="box">
+                            <span>Internet 50 MB</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="133" name="internet" value="Agrega 50 MB Fibra Óptica" data-check="false" data-get-set="false" data-precio="2600.00">
+                        <div class="box">
+                            <span>Agrega 50 MB Fibra Óptica</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="11" name="internet" value="Internet 50 MB Fibra Óptica" data-check="false" data-get-set="false" data-precio="2600.00">
+                        <div class="box">
+                            <span>Internet 50 MB Fibra Óptica</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="134" name="internet" value="Agrega 100 MB Fibra Óptica" data-check="false" data-get-set="false" data-precio="3550.00">
+                        <div class="box">
+                            <span>Agrega 100 MB Fibra Óptica</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="12" name="internet" value="Internet 100 MB Fibra Óptica" data-check="false" data-get-set="false" data-precio="3550.00">
+                        <div class="box">
+                            <span>Internet 100 MB Fibra Óptica</span>
+                        </div>
+                    </label>
+                </div>
+                                <div class="options">
+                                        <label>
+                        <input type="radio" id="137" name="internet" value="Agrega 50 FTTH - Especial" data-check="false" data-get-set="false" data-precio="2600.00">
+                        <div class="box">
+                            <span>Agrega 50 FTTH - Especial</span>
+                        </div>
+                    </label>
+                </div>
+                            </div>
+
+			<div class="col-lg-4 col-md-4 tercero">
+				<div class="titulo">Pedí tu combo</div>
+				<div class="loading-sec">
+					<div class="subtotal" id="subtot">
+						<ul id="dItems">
+							<li id="dCable"></li>
+							<li id="dInternet"></li>
+						</ul>
+						<ul>
+							<li id="dDebito">
+								Pagar con débito automático
+								<input type="checkbox" id="debito" checked="checked">
+							</li>
+						</ul>
+
+						<input type="hidden" id="pSelect" data-c-id="0" data-i-id="0" data-a-id="">
+						<input type="hidden" id="match" value="https://www.elcuatro.com/arma-tu-combo/match">
+						<input type="hidden" id="contrato" value="https://www.elcuatro.com/admin/ventas/contrato">
+						<input type="hidden" id="formfirma" value="https://www.elcuatro.com/admin/ventas/formulariofirma">
+						<input type="hidden" id="selectStatus" status-c-id="0" status-i-id="0">
+						<input type="hidden" name="combo" id="combo" value="">
+						<input type="hidden" name="promoid" id="promoid" value="">
+						<input type="hidden" name="vendedor_localidad" id="vendedor_localidad" value="SAN SALVADOR DE JUJUY">
+						<input type="hidden" name="cable" id="cmbCable" value="">
+						<input type="hidden" name="internet" id="cmbInternet" value="">
+						<input type="hidden" name="pack" id="cmbPacks" value="">
+
+						<p class="seccion">Descuentos</p>
+						<ul id="descuentos">
+						</ul>
+
+						<p class="seccion">Adicionales</p>
+						<ul id="adicionales">
+						</ul>
+
+						<p class="seccion">Resúmen</p>
+
+						<ul class="checkout">
+							<li>Total servicios principales<span id="tp">$0</span></li>
+							<li>Total descuentos<span id="td">$0</span></li>
+							<li>Total adicionales (única vez)<span id="ta">$0</span></li>
+
+							<li class="valor">Subtotal<span id="dSubtotal" data-c-st="0" data-i-st="0" data-a-st="0" data-desc-st="0" data-adic-st="0">$0</span></li>
+							<li class="total">Total<span id="dTotal" data-total="0">$0</span><br><span class="finales"> finales por mes</span></li>
+						</ul>
+
+						<div class="contratar">
+							<button type="button" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#modalSolicitar" data-megas="false" id="contratar" disabled="disabled">Solicitar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            <span class="px-3 my-4" id="legales"></span>
+        </div>
+	</div>
+</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>Versión 80.2 - &copy;2022<br />
+						<a href="https://www.elcuatro.com" target="_blank" title="Ir al sitio oficial">El Cuatro</a> - Admin</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Los javascript. Estos siempre van a estar en toda la aplicacion -->		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+        <script src="https://www.elcuatro.com/views/admin/layout/default/js/elcuatro-admin.js?80.2"></script>
+		<!-- PLUGINS -->
+				<!-- SCRIPTS DE LA PAGINA -->
+		<script src="https://www.elcuatro.com/views/admin/ventas/js/vendedores.js?80.2"></script>
+<script src="https://www.elcuatro.com/views/admin/ventas/js/SigWebTablet.js?80.2"></script>
+	</body>
+</html>
