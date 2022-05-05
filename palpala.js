@@ -258,35 +258,18 @@ let actualizarTabla = (nombre, precio, descuento, final, abm) => {
   let container = document.querySelector(".table-container");
   var tabla = document.createElement("table");
   let tablaBody = document.querySelector("tBody");  
+  let tbodie = "";
   for (let [key, value] of carritoMap) {
     console.log(key,' goes ',value[0],value[1],value[2]);
+    tbodie += `<tr>
+    <td>${key}</td>
+    <td>${value[0]}</td>
+    <td>${value[1]}</td>
+    <td>${value[2]}</td>
+  </tr>`;
   }
-  tablaBody.innerHTML = `
-  <tr>
-    <td>clave</td>
-    <td>array[0]</td>
-    <td>array[1]</td>
-    <td>array[2]</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-`;
+  tablaBody.innerHTML = tbodie;
+
 
   //despues subdividir en una funcion
   /*
