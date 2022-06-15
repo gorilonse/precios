@@ -17,22 +17,23 @@
   </head>
   <body>
     <header class="nav-bar">
-      <h1>Precios</h1>
+      <a href="index.html">Descuentos</a>
+      <a href="retenciones.html">Retenciones</a>
     </header>
     <div class="content">
       <div class="selectores">
         <div>
           <label for="localidad">Seleccione la localidad:&nbsp;</label>
           <select id="localidad" autocomplete="off">
-            <option value="listaSalvador">San Salvador</option>
+            <option value="listaSalvador" selected>San Salvador</option>
             <option value="listaPalpala">Palpala</option>
           </select>
         </div>
         <div>
           <label for="lista">Seleccione la lista de precios:&nbsp;</label>
           <select id="lista" autocomplete="off">
-            <option value="marzo 22">Marzo 2022</option>
-            <option value="diciembre 21">Diciembre 2021</option>
+            <option value="listaJun2022" selected>Junio 2022</option>
+            <option value="listaMar2022">Marzo 2022</option>
           </select>
         </div>
       </div>
@@ -44,7 +45,7 @@
           </div>
           <div class="wrapper-cable">
             <div class="recuadro">
-              <div class="item" value="1900,1520,1330,1140" id="TV">
+              <div class="item" value="1900,1520,1330,1159" id="TV">
                 <span id="nombre">TV</span>
               </div>
               <div class="stepper" porcentajes="0%,20%,30%,40%" indice="0">
@@ -105,7 +106,7 @@
               >
                 <span id="nombre">Internet 50MB</span>
               </div>
-              <div class="stepper" porcentajes="0%,20%,30%" indice="0">
+              <div class="stepper" porcentajes="0%,20%,30%,40%" indice="0">
                 <span class="material-icons">remove</span>
                 <span class="porcentaje-data" id="porcentaje">0%</span>
                 <span class="material-icons">add</span>
@@ -159,9 +160,9 @@
             <span>Total</span>
           </div>
           <div class="resumen">
-            <h3>Total con descuentos:<span id="descuentos">$0</span></h3>
+            <h3>Total con descuentos: <span id="descuentos">$0</span></h3>
             <h6>Total sin descuento: <span id="total">$0</span></h6>
-            <h6>Monto descontado:<span id="montoDescuento">$0</span></h6>
+            <h6>Monto descontado: <span id="montoDescuento">$0</span></h6>
 
             <h4>Detalle</h4>
             <div class="table-container">
@@ -170,7 +171,7 @@
                   <tr>
                     <th>Item</th>
                     <th>Lista</th>
-                    <th>Desc.</th>
+                    <th>Descuento</th>
                     <th>Final</th>
                   </tr>
                 </thead>
@@ -216,7 +217,6 @@
         </div>
       </div>
     </template>
-    <!-- <script src="/main.js"></script> -->
     <script src="/palpala.js"></script>
   </body>
 </html>

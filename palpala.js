@@ -3,7 +3,7 @@ const listaMar2022 = {
     Cable: [
       {
         titulo: "TV",
-        precio: [1900, 1520, 1330, 1140],
+        precio: [1900, 1520, 1330, 1159],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
@@ -14,7 +14,6 @@ const listaMar2022 = {
       {
         titulo: "Go Adicional",
         precio: 280,
-        porcentajes: ["0%", "20%", "30%", "40%"],
       },
       { titulo: "Futbol", precio: 1120 },
       { titulo: "HBO", precio: 630 },
@@ -50,7 +49,7 @@ const listaMar2022 = {
     Cable: [
       {
         titulo: "TV",
-        precio: [1320, 800, 924, 1056],
+        precio: [1320, 1056, 924, 800],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
@@ -61,7 +60,7 @@ const listaMar2022 = {
       {
         titulo: "Go Adicional",
         precio: 230,
-        porcentajes: ["0%", "20%", "30%", "40%"],
+
       },
       { titulo: "Futbol", precio: 1120 },
       { titulo: "HBO", precio: 630 },
@@ -75,39 +74,155 @@ const listaMar2022 = {
       },
       {
         titulo: "Internet 50MB",
-        precio: [2040, 1220, 1428, 1632],
+        precio: [2040, 1632, 1428, 1220],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
         titulo: "Internet 100MB",
-        precio: [3150, 1880, 2205, 2520],
+        precio: [3150, 2520, 2205, 1880],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
     ],
   },
 };
+
+/*********************************
+ * Junio**
+ **********************************/
+
+const listaJun2022 = {
+  listaSalvador: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [2130, 1704, 1491, 1280],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [560, 448, 392, 330],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 320,
+        porcentajes: ["0%", "40%"],
+      },
+      { titulo: "Futbol", precio: 1120 },
+      { titulo: "HBO", precio: 630 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [2900, 2320, 2030, 1740],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [4000, 3200, 2800, 2400],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 10MB",
+        precio: 2130,
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2250,
+      },
+      {
+        titulo: "Internet 30MB",
+        precio: 3100,
+      },
+      { titulo: "Internet 200MB", precio: 4500 },
+      { titulo: "Internet 300MB", precio: 5300 },
+      { titulo: "Internet 500MB", precio: 17000 },
+    ],
+  },
+  listaPalpala: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [1480, 1184, 1036, 890],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [500, 400, 350, 300],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 260,
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      { titulo: "Futbol", precio: 1120 },
+      { titulo: "HBO", precio: 630 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 20MB",
+        precio: 2060,
+      },
+      {
+        titulo: "Internet 50MB",
+        precio: [2290, 1832, 1603, 1370],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [3290, 2632, 2303, 1970],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+    ],
+  },
+};
+
 let carritoMap = new Map();
 let localidad = document.querySelector("#localidad");
+let listaMes = document.querySelector("#lista");
 
+let obListas = {
+  listaJun2022,
+  listaMar2022
+}
 /************************************************************************
 _____________________Cambio y dibujo___________________________________
 *************************************************************************/
 
-// ######################Borrar valores de la tabla###################################
+window.onload = ()=>{  
+  actualizarItems(localidad.selectedOptions[0].value,listaMes.selectedOptions[0].value);
+  carritoMap.clear();
+  actualizarTabla(carritoMap);
+}
 
 localidad.addEventListener("change", (e) => {
-  actualizarItems(e.target.selectedOptions[0].value);
-  //limpar mapa carrito
+  listaMes = document.querySelector("#lista");
+  actualizarItems(e.target.selectedOptions[0].value,listaMes.selectedOptions[0].value);
   carritoMap.clear();
-  //limpiar tabla
-  let tbl = document.querySelector("table");
-  tbl.removeChild(tbl.getElementsByTagName("tbody")[0]);
-  tbl.createTBody();
+  actualizarTabla(carritoMap);
+});
+listaMes.addEventListener("change", (e) => {
+  localidad = document.querySelector("#localidad");
+  actualizarItems(localidad.selectedOptions[0].value,e.target.selectedOptions[0].value);
+  carritoMap.clear();
+  actualizarTabla(carritoMap);
 });
 
-let actualizarItems = (lista) => {
-  const listaLocalidad = Object.entries(listaMar2022[lista]);
 
+//@param localidad mes
+/**
+ * @param localidad
+ * @param mes
+ */
+let actualizarItems = (vLocalidad,vListaMes) => {
+  console.log(vLocalidad,vListaMes);
+  listass = obListas[vListaMes][vLocalidad];
+
+
+  const listaLocalidad = Object.entries(listass);
   listaLocalidad.map((tipoPrecios) => {
     let tipo = tipoPrecios[0];
     let templateRecuadro = document.getElementById("template-recuadro").content;
@@ -178,15 +293,12 @@ document.addEventListener("click", (e) => {
     elm = e.target.parentNode.parentNode;
     activated(elm, true);
   }
-}); //final del add event listener
+}); 
 /************************************************************************
 ___________________________Funcionalidad_____________________________
 *************************************************************************/
-//funcion para cambiar porcentajes
 let cambiarPorcentaje = (agrega, e) => {
-  //definir recuadro para activar
   let recuadroActual = e.target.parentNode.parentNode;
-
   let stepperActual = e.target.parentNode;
   let porcentajesArray = stepperActual.getAttribute("porcentajes").split(",");
   let indice = parseInt(stepperActual.getAttribute("indice"));
@@ -199,45 +311,50 @@ let cambiarPorcentaje = (agrega, e) => {
   stepperActual.setAttribute("indice", indice);
   porcentajesData = stepperActual.querySelector("#porcentaje");
   porcentajesData.textContent = porcentajesArray[indice];
-
-  //cambiar funcionalidad segun elementos hermanos activos
-  //recuadroActual.classList.add("active");
   activated(recuadroActual, false);
 };
 
-/************************************************************************
-Manejar recuadro activo o inactivo
-parametro el elemento ademas @param toggle o add
-del elemento obtiene los valores como precio y porcentaje para calcular
-precio lista, descuento y total
-despues armar un objeto tabla para que muestre los elemento en orden
-*************************************************************************/
 let activated = (elemento, toggle) => {
   nombre = elemento.firstElementChild.getAttribute("id");
   precios = elemento.firstElementChild.getAttribute("value").split(",");
   indice = parseInt(elemento.lastElementChild.getAttribute("indice"));
   bandera = true;
-  //ver si corresponde
+  if (elemento.parentElement.classList.contains("wrapper-internet")) {
+    hermanos = elemento.parentElement.children;
+    for (let hermano of hermanos) {
+      if (hermano.classList.contains("active")) {
+        hermano === elemento ? null : hermano.classList.toggle("active");
+        hnombre = hermano.firstElementChild.getAttribute("id");
+        hprecios = hermano.firstElementChild.getAttribute("value").split(",");
+        hindice = parseInt(hermano.lastElementChild.getAttribute("indice"));
+        hbandera = false;
+        hhijos = hermano.children;
+        hprecio = hprecios[0];
+        if (hhijos.length > 1) {
+          indice = parseInt(hermano.lastElementChild.getAttribute("indice"));
+          hdescuento = hprecios[indice];
+        } else {
+          hdescuento = hprecio;
+        }
+        hdiferencia = hprecio - hdescuento;
+
+        actualizarTabla(hnombre, hprecio, hdiferencia, hdescuento, hbandera);
+      }
+    }
+  }
+
   toggle
     ? (bandera = elemento.classList.toggle("active"))
     : elemento.classList.add("active");
   hijos = elemento.children;
   precio = precios[0];
-
-  //precio lista, si es array descuento. monto descontado
   if (hijos.length > 1) {
     indice = parseInt(elemento.lastElementChild.getAttribute("indice"));
     descuento = precios[indice];
   } else {
     descuento = precio;
   }
-  diferencia = descuento - precio;
-  //console.log(nombre,'lista',precio,'precio final',descuento,'descuento',diferencia);
-  //parametro toggle
-  //console.log(bandera)
-  //si se activo sumar elm.classList.contains("active"))
-  //si se desactivo restar
-  // bandera define abm, osea agregar o eliminar dependiento de la clase active
+  diferencia = precio - descuento;
   actualizarTabla(nombre, precio, diferencia, descuento, bandera);
 };
 
@@ -245,97 +362,48 @@ let activated = (elemento, toggle) => {
 --------------- Manipulación de la tabla --------------------
 *************************************************************************/
 let actualizarTabla = (nombre, precio, descuento, final, abm) => {
-  //crear un elemento que guarde las variables y las borre
   abm
     ? carritoMap.set(nombre, [precio, descuento, final])
     : carritoMap.delete(nombre);
-  console.log("este es el mapa actual", carritoMap);
-  console.table(carritoMap);
-
-  //ordenar el carrito para que se dibuje con un fragment siempre en el mismo orden del id
-  // de los productos
-
+  console.log(carritoMap);
+  carritoOrdenado = Array.from(carritoMap).sort();
+  console.table(carritoOrdenado);
   let container = document.querySelector(".table-container");
   var tabla = document.createElement("table");
-  let tablaBody = document.querySelector("tBody");  
+  let tablaBody = document.querySelector("tBody");
   let tbodie = "";
   for (let [key, value] of carritoMap) {
-    console.log(key,' goes ',value[0],value[1],value[2]);
     tbodie += `<tr>
     <td>${key}</td>
-    <td>${value[0]}</td>
-    <td>${value[1]}</td>
-    <td>${value[2]}</td>
+    <td>$${value[0]}</td>
+    <td>- $${value[1]}</td>
+    <td>$${value[2]}</td>
   </tr>`;
   }
   tablaBody.innerHTML = tbodie;
 
-
-  //despues subdividir en una funcion
-  /*
-
-  var tabla   = document.createElement("table");
-  var tblBody = document.createElement("tbody");
-  var hilera = document.createElement("tr");
-  var celda = document.createElement("td");
-  var textoCelda = document.createTextNode("celda en la hilera ");
-  celda.appendChild(textoCelda);
-  hilera.appendChild(celda);
-  tblBody.appendChild(hilera);
-  tabla.appendChild(tblBody);
-
-  let tablaBody = document.querySelector("tBody");
-  let fragmentTable =  document.createDocumentFragment();
-  newRow = fragmentTable.insertRow();
-  newCell = newRow.insertCell(-1);
-  newText = document.createTextNode('Hola');
-  newCell.appendChild(newText);
-  
-  tablaBody.appendChild(fragmentTable);
-
-*/
-
-  /*
-  let tablaBody = document.querySelector("tBody");
-  let array = [nombre, `$${precio}`, `-$${descuento}`, `$${final}`];
-
-  let crear = (index, tabla) => {
-    newRow = tabla.insertRow(index);
-    array.forEach((item) => {
-      newCell = newRow.insertCell(-1);
-      newText = document.createTextNode(item);
-      newCell.appendChild(newText);
-    });
-  };
-  let eliminar = (index, tabla) => {
-    tabla.deleteRow(index);
-  };
-
-  let existe = false;
-  let largo = tablaBody.rows.length;
-
-  for (let i = 0; i < largo; i++) {
-    if (nombre === tablaBody.rows[i].cells[0].innerText) {
-      existe = true;
-      if (abm) {
-        eliminar(i, tablaBody);
-        crear(i, tablaBody);
-      } else {
-        eliminar(i, tablaBody);
-        break;
-      }
-  }}
-  if (!existe) {
-    crear(-1, tablaBody);
-  }
-  */
+  fTablaTotal(carritoMap);
 };
-//pasar el map para mostrar los totales, si el map esta vacío totales en cero
-//usar reduce para iterar en los valores del map y luego crear un array
-//y al iterar solo suma
 
 fTablaTotal = (map) => {
-  map;
+  let totales = [0, 0, 0];
+  map.forEach((element) => {
+    totales[0] += parseInt(element[0]);
+    totales[1] += parseInt(element[1]);
+    totales[2] += parseInt(element[2]);
+  });
+  let tablaFoot = document.querySelector("tfoot");
+  let tfoot = "";
+  tfoot += `<tr>
+    <td>Total</td>
+    <td>$${totales[0]}</td>
+    <td>- $${totales[1]}</td>
+    <td>$${totales[2]}</td>
+  </tr>`;
+  tablaFoot.innerHTML = tfoot;
+  document.getElementById("descuentos").innerHTML = ` $${totales[2]}`;
+  document.getElementById("montoDescuento").innerHTML = ` -$${totales[1]}`;
+  document.getElementById("total").innerHTML = ` $${totales[0]}`;
 };
 
 // TO DO
