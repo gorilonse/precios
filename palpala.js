@@ -106,9 +106,8 @@ const listaJun2022 = {
       {
         titulo: "Go Adicional",
         precio: 320,
-        porcentajes: ["0%", "40%"],
       },
-      { titulo: "Futbol", precio: 1120 },
+      { titulo: "Futbol", precio: 1290 },
       { titulo: "HBO", precio: 630 },
       { titulo: "Adultos", precio: 300 },
     ],
@@ -120,7 +119,7 @@ const listaJun2022 = {
       },
       {
         titulo: "Internet 100MB",
-        precio: [4000, 3200, 2800, 2400],
+        precio: [3700, 2960, 2590, 2220],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
@@ -155,9 +154,8 @@ const listaJun2022 = {
       {
         titulo: "Go Adicional",
         precio: 260,
-        porcentajes: ["0%", "20%", "30%", "40%"],
       },
-      { titulo: "Futbol", precio: 1120 },
+      { titulo: "Futbol", precio: 1290 },
       { titulo: "HBO", precio: 630 },
       { titulo: "Adultos", precio: 300 },
     ],
