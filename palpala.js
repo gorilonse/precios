@@ -216,7 +216,6 @@ listaMes.addEventListener("change", (e) => {
  * @param mes
  */
 let actualizarItems = (vLocalidad,vListaMes) => {
-  console.log(vLocalidad,vListaMes);
   listass = obListas[vListaMes][vLocalidad];
 
 
@@ -363,9 +362,7 @@ let actualizarTabla = (nombre, precio, descuento, final, abm) => {
   abm
     ? carritoMap.set(nombre, [precio, descuento, final])
     : carritoMap.delete(nombre);
-  console.log(carritoMap);
   carritoOrdenado = Array.from(carritoMap).sort();
-  console.table(carritoOrdenado);
   let container = document.querySelector(".table-container");
   var tabla = document.createElement("table");
   let tablaBody = document.querySelector("tBody");
