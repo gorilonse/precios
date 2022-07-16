@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: "Ubuntu", sans-serif;
   -webkit-user-select: none;
@@ -356,4 +357,364 @@ h1:hover{
 }
 .montoHistorico:hover{
   cursor: pointer;
+=======
+body {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-bar {
+  background: #a95682;
+  color: #fff;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar a {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+a:visited {
+  color: #ffffff;
+}
+.actual{
+  color: black;
+}
+
+a:link {
+  color: #f7f7f7;
+}
+
+
+a:focus {
+  background: #8f496e;
+}
+
+a:hover {
+  background: #773c5c;
+}
+
+a:active {
+  background: #773c5c;
+  color: #914d72;
+}
+
+h1 {
+  margin: 10px;
+  margin-left: 2em;
+}
+
+
+.container-form {
+
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  box-shadow: none;    
+  background-color: rgba(94, 75, 180, 0.527);
+  outline-offset: 0;
+  padding: 1px 2px;
+}
+input {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.container-form input:focus-visible{
+    outline-offset: 0;
+    padding: 1px 2px;
+    outline: #000 1px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  margin: 15px 2em;
+}
+.container-form button {
+  border: none;
+  margin-left: 1em;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+.container-form button:hover {
+  background-color: #b6b6b6;
+  color: white;
+}
+
+.container-form button:active {
+  background-color: #ccc;
+  color: #eee;
+  transform: translateY(2px);
+}
+
+.tarjetas {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjetas h2{
+  margin: 10px;
+}
+.Visa-Mastercard-Cabal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Visa-Mastercard-Cabal .bloques {
+  background-color: rgba(47, 0, 255, 0.116);
+  flex: auto;
+  padding-bottom: 1em;
+}
+.Naranja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Naranja .bloques {
+  background-color: rgba(255, 68, 0, 0.479);
+  flex: auto;
+  padding-bottom: 1em;
+}
+.bloques {
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+.bloques h3  {
+  margin: 5px 0px 0 0;  
+}
+.bloques  h4 {
+  margin: .6em 0 .3em 0 ;  
+}
+
+.copy-btn {
+  fill: #fff;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+i{
+  margin-left: 4px;
+}
+
+i:hover {
+  color: #555;
+  cursor:pointer;
+}
+i:active {
+  color: #222;  
+}
+
+h4{
+  font-weight: 400;
+  margin-bottom: 0;
+}
+b{
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+
+    visibility: hidden;
+    width: 60px;
+    background-color: #555;
+    color: #eee;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 140%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bloques i {
+  visibility: hidden;
+}
+.bloques:hover i {
+  visibility: visible;
+}
+b{
+  padding-left: 1em;
+  padding-right: 0%;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+header i {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  font-size: 2em;
+}
+
+body.darktheme {
+  background-color: #252c48;
+  color: #eee;
+}
+body.darktheme #tryitLeaderboard{
+  background-color:rgb(40, 44, 52);
+}
+body.darktheme .trytopnav{
+  background-color:#616161;
+  color:#dddddd;
+}
+body.darktheme #container {
+  background-color:#616161;
+}
+body.darktheme .trytopnav a {
+  color:#dddddd;
+}
+body.darktheme input {
+  color:#fff;
+  background-color: #252c48;
+}
+body.darktheme ::-webkit-scrollbar {width:12px;height:3px;}
+body.darktheme ::-webkit-scrollbar-track-piece {background-color:#000;}
+body.darktheme ::-webkit-scrollbar-thumb {height:50px;background-color: #616161;}
+body.darktheme ::-webkit-scrollbar-thumb:hover {background-color: #aaaaaa;}
+
+
+/*Historial*/
+
+.nombres{
+    
+  max-width: 700px;
+  margin: auto;
+  margin-top: 40px;
+}
+.nombre{
+  display: grid;
+  grid-template-columns: minmax(100px,300px) 1fr;
+  border-top: 1px solid rgb(58, 34, 34);
+}
+.options{
+  display: flex;
+  justify-self: end;
+}
+.add-nombres {
+  margin-top: 40px;
+}
+#nombre{
+  padding: 4px 8px;
+}
+
+#add {
+  padding: 4px 8px;
+}
+
+.options button{
+  background: transparent;
+  border: none;
+  margin: 4px 10px;
+  outline: none;
+}
+
+.delete:hover{
+  color: #999;
+}
+
+.imposible {
+  color: #ccc;
+}
+
+.posible {
+  color: #37d;
+}
+
+.posible:hover {
+  color: #6af;
+}
+
+.nombre h2{
+  padding: 2px;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.contenedor-historial{
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: baseline;
+  box-shadow: none;    
+  outline-offset: 0;
+  padding: 1px 2px;
+}
+
+h1:hover{
+  cursor: pointer;
+}
+.montoHistorico:hover{
+  cursor: pointer;
+>>>>>>> ba5966da439a8e59743e88c47fcd696f8a847d10
 }
