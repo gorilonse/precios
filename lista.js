@@ -112,8 +112,7 @@ let dibujar = (lista)=>{
   let tabla = document.createElement("table");
   let row = document.createElement("tr");
   let inner ='';
-  //console.log(lista)
-  //console.log(Object.keys(lista));
+
   Object.keys(lista).map(
     agrupador => {
       inner+=`<tr><th>${agrupador}</th><tr>`;
@@ -124,7 +123,7 @@ let dibujar = (lista)=>{
       <th>Vigente</th>
       <tr>`;
       Object.values(lista[agrupador]).map(elemento=>{
-        console.log(elemento.id);
+     
 
         inner+=`<tr>          
           <td>${elemento.id}</td>
@@ -143,7 +142,7 @@ let dibujar = (lista)=>{
 
  /* let agrupadores = Object.keys(lista)
   agrupadores.map(item =>Object.values(lista[item]).map(el=>Object.entries(el).map(e=>{
-   console.log(e[0],e[1])
+
     
   
  })))*/
