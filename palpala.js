@@ -1,4 +1,3 @@
-
 const listaMar2022 = {
   listaSalvador: {
     Cable: [
