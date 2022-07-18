@@ -236,6 +236,9 @@ table.adicionales{
   max-width: 1000px;
   margin: auto;
 }
+table.adicionales tr:nth-child(even){
+  background-color: #c1e8f8;
+}
 table.adicionales tr:hover{
   color: #000000;
   background-color: #4f534f4f;
@@ -244,9 +247,6 @@ table.adicionales thead {
   text-transform: uppercase;
   background-color: #52cbff;
   color: rgb(255, 255, 255);
-}
-table.adicionales tr:nth-child(even){
-  background-color: #c1e8f8;
 }
 table.retenciones tr:hover{
   background-color: #4f534f4f;
