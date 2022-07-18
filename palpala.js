@@ -8,8 +8,8 @@ const listaMar2022 = {
       },
       {
         titulo: "Go",
-        precio: [500, 400, 350, 300],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [500, 350, 300],
+        porcentajes: ["0%", "30%", "40%"],
       },
       {
         titulo: "Go Adicional",
@@ -54,8 +54,8 @@ const listaMar2022 = {
       },
       {
         titulo: "Go",
-        precio: [450, 360, 315, 270],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [450, 315, 270],
+        porcentajes: ["0%", "30%", "40%"],
       },
       {
         titulo: "Go Adicional",
@@ -100,8 +100,8 @@ const listaJun2022 = {
       },
       {
         titulo: "Go",
-        precio: [560, 448, 392, 330],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [560, 392, 330],
+        porcentajes: ["0%", "30%", "40%"],
       },
       {
         titulo: "Go Adicional",
@@ -148,8 +148,8 @@ const listaJun2022 = {
       },
       {
         titulo: "Go",
-        precio: [500, 400, 350, 300],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [500,350, 300],
+        porcentajes: ["0%", "30%", "40%"],
       },
       {
         titulo: "Go Adicional",

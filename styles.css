@@ -1,18 +1,19 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none; */
 }
 
 .nav-bar {
   background: #a95682;
   color: #fff;
-  height: 2rem;
+  height: 3rem;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 .nav-bar a {
   margin: 0;
@@ -50,8 +51,8 @@ a:active {
   color: #914d72;
 }
 .content {
-  background-color: #ddd;
-  width: 1100px;
+  background-color: #eff;
+  /* width: 1100px; */
   margin: auto;
 }
 
@@ -195,7 +196,7 @@ tr:nth-child(even){
 }
 
 .active {
-  background-color: #424f52;
+  background: #8f496e;
   color: #fff;
 }
 .active:hover {
@@ -208,4 +209,45 @@ tr:nth-child(even){
 }
 .material-icons:active {
   color: #15ff00;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+h2{
+  margin: 0 50%;
+  padding: 1.3rem 0;
+}
+
+
+table.palpala thead {
+  text-transform: uppercase;
+  background-color: #e48a4e;
+  color: rgb(255, 255, 255);
+}
+
+table.palpala tr:nth-child(even){
+  background-color: #f3cfb7;
+}
+
+table.adicionales{
+  max-width: 1000px;
+  margin: auto;
+}
+table.adicionales tr:hover{
+  color: #000000;
+  background-color: #4f534f4f;
+}
+table.adicionales thead {
+  text-transform: uppercase;
+  background-color: #98dbf8;
+  color: rgb(255, 255, 255);
+}
+table.adicionales tr:nth-child(even){
+  background-color: #ccebf8;
+}
+table.retenciones tr:hover{
+  background-color: #4f534f4f;
 }
