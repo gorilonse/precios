@@ -242,7 +242,7 @@ table.adicionales tr:hover{
 }
 table.adicionales thead {
   text-transform: uppercase;
-  background-color: #98dbf8;
+  background-color: #7cd5fc;
   color: rgb(255, 255, 255);
 }
 table.adicionales tr:nth-child(even){
