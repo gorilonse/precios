@@ -242,11 +242,11 @@ table.adicionales tr:hover{
 }
 table.adicionales thead {
   text-transform: uppercase;
-  background-color: #7cd5fc;
+  background-color: #52cbff;
   color: rgb(255, 255, 255);
 }
 table.adicionales tr:nth-child(even){
-  background-color: #ccebf8;
+  background-color: #c1e8f8;
 }
 table.retenciones tr:hover{
   background-color: #4f534f4f;
