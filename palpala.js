@@ -1,3 +1,120 @@
+/*********************************
+ * Septiembre**
+ **********************************/
+ const listaSep2022 = {
+  listaSalvador: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [2450, 1960, 1715, 1470],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [650, 455, 390],
+        porcentajes: ["0%", "30%", "40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 300,
+      },
+      { titulo: "Futbol", precio: 1120 },
+      { titulo: "HBO", precio: 630 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [3330, 2664, 2331, 1999],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [4250, 3400, 2975, 2100],
+        porcentajes: ["0%", "20%", "30%", "50%"],
+      },
+      {
+        titulo: "Internet 10MB",
+        precio: 2130,
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2250,
+      },
+      {
+        titulo: "Internet 30MB",
+        precio: 3100,
+        
+      },
+      {
+        titulo: "Internet 200MB",
+        precio: [5180,2930],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6090,3440],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 500MB",
+        precio: 19550,
+      },
+     
+    ],
+  },
+  listaPalpala: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [1700, 1360, 1190, 1020],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [570, 399, 350,342],
+        porcentajes: ["0%", "30%", "39%","40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 300,
+
+      },
+      { titulo: "Futbol", precio: 1120 },
+      { titulo: "HBO", precio: 630 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 20MB",
+        precio: 2370,
+      },
+      {
+        titulo: "Internet 50MB",
+        precio: [2630, 2104, 1841, 1580],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [4250, 3400, 2975, 1890],
+        porcentajes: ["0%", "20%", "30%", "55%"],
+      },
+      {
+        titulo: "Internet 200MB",
+        precio: [5180,2930],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6090,3440],
+        porcentajes: ["0%","45%"],
+      },
+    ],
+  },
+};
+/*********************************
+ * Marzo**
+ **********************************/
 const listaMar2022 = {
   listaSalvador: {
     Cable: [
@@ -183,6 +300,7 @@ let localidad = document.querySelector("#localidad");
 let listaMes = document.querySelector("#lista");
 
 let obListas = {
+  listaSep2022,
   listaJun2022,
   listaMar2022
 }
