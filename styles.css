@@ -251,3 +251,8 @@ table.adicionales thead {
 table.retenciones tr:hover{
   background-color: #4f534f4f;
 }
+
+#descuentos{
+  font-size: 2rem;
+  color: #b92239;
+}
