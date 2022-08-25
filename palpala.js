@@ -523,3 +523,4 @@ fTablaTotal = (map) => {
 
 // TO DO
 //carritoMap.sort()
+console.log('hola');
