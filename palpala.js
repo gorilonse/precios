@@ -25,8 +25,8 @@
     Internet: [
       {
         titulo: "Internet 50MB",
-        precio: [3330, 2664, 2331, 1999],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [3330, 2664, 3253,2331, 2000],
+        porcentajes: ["0%", "20%","22.4%", "30%", "40%"],
       },
       {
         titulo: "Internet 100MB",
@@ -91,8 +91,8 @@
       },
       {
         titulo: "Internet 50MB",
-        precio: [2630, 2104, 1841, 1580],
-        porcentajes: ["0%", "20%", "30%", "40%"],
+        precio: [2630,2366 ,2104, 1841, 1580],
+        porcentajes: ["0%","10%", "20%", "30%", "40%"],
       },
       {
         titulo: "Internet 100MB",
