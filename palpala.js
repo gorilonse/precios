@@ -521,10 +521,3 @@ fTablaTotal = (map) => {
   document.getElementById("montoDescuento").innerHTML = ` -$${totales[1]}`;
   document.getElementById("total").innerHTML = ` $${totales[0]}`;
 };
-
-// TO DO
-//carritoMap.sort()
-<<<<<<< HEAD
-=======
-console.log('hola');
->>>>>>> f5899caac517236cf98049e2228ec009b0fa0de6
