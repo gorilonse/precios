@@ -30,21 +30,8 @@
       },
       {
         titulo: "Internet 100MB",
-        precio: [4250, 3400, 2975, 2150],
-        porcentajes: ["0%", "20%", "30%", "50%"],
-      },
-      {
-        titulo: "Internet 10MB",
-        precio: 2130,
-      },
-      {
-        titulo: "Internet 20MB",
-        precio: 2250,
-      },
-      {
-        titulo: "Internet 30MB",
-        precio: 3100,
-        
+        precio: [4250, 3400, 2975,2550 ,2150],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
       },
       {
         titulo: "Internet 200MB",
@@ -59,6 +46,19 @@
       {
         titulo: "Internet 500MB",
         precio: 19550,
+      },
+      {
+        titulo: "Internet 10MB",
+        precio: 2130,
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2250,
+      },
+      {
+        titulo: "Internet 30MB",
+        precio: 3100,
+        
       },
      
     ],
@@ -86,18 +86,14 @@
     ],
     Internet: [
       {
-        titulo: "Internet 20MB",
-        precio: 2370,
-      },
-      {
         titulo: "Internet 50MB",
         precio: [2630,2366 ,2104, 1841, 1580],
         porcentajes: ["0%","10%", "20%", "30%", "40%"],
       },
       {
         titulo: "Internet 100MB",
-        precio: [4250, 3400, 2975, 1890],
-        porcentajes: ["0%", "20%", "30%", "55%"],
+        precio: [4250, 3400, 2975,2550 ,2150],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
       },
       {
         titulo: "Internet 200MB",
@@ -108,6 +104,10 @@
         titulo: "Internet 300MB",
         precio: [6090,3440],
         porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2370,
       },
     ],
   },
@@ -523,4 +523,3 @@ fTablaTotal = (map) => {
 
 // TO DO
 //carritoMap.sort()
-console.log('hola');
