@@ -30,27 +30,10 @@
       },
       {
         titulo: "Internet 100MB",
-<<<<<<< HEAD
         precio: [4250, 3400, 2975,2550 ,2150],
         porcentajes: ["0%", "20%", "30%", "40%","50%"],
-=======
-        precio: [4250, 3400, 2975, 2150],
-        porcentajes: ["0%", "20%", "30%", "50%"],
       },
-      {
-        titulo: "Internet 10MB",
-        precio: 2450,
-      },
-      {
-        titulo: "Internet 20MB",
-        precio: 2250,
-      },
-      {
-        titulo: "Internet 30MB",
-        precio: 3100,
-        
->>>>>>> f5899caac517236cf98049e2228ec009b0fa0de6
-      },
+
       {
         titulo: "Internet 200MB",
         precio: [5180,2930],
