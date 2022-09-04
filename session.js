@@ -1,7 +1,7 @@
 session = ()=>{
     const logueado = sessionStorage.getItem('logeado');
     if (!logueado){ 
-        window.location = "/login.html"; 
+        window.location = "/index.html"; 
     }
 }
 
