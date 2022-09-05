@@ -10,7 +10,7 @@ let verificar =(evt)=>{
     if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
         document.querySelector('.valid').style.display = 'block';
         sessionStorage.setItem('logeado', true);
-         window.location = "descuentos.html"; // go to home.html
+         window.location = "https://gukoa4.github.io/precios/descuentos.html"; // go to home.html
     }
     else {
         document.querySelector('.error').style.display = 'block'; // show error msg
@@ -20,7 +20,7 @@ let verificar =(evt)=>{
 let session = ()=>{
     const logueado = sessionStorage.getItem('logeado');
     if (logueado){ 
-        window.location = "descuentos.html"; 
+        window.location = "https://gukoa4.github.io/precios/descuentos.html"; 
     }
 
 }
