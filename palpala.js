@@ -1,3 +1,120 @@
+
+
+/*********************************
+ * Octubre**
+ **********************************/
+ const listaOct2022 = {
+  listaSalvador: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [2450, 1960, 1715, 1470],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [650, 455, 390],
+        porcentajes: ["0%", "30%", "40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 300,
+      },
+      { titulo: "Futbol", precio: 1535 },
+      { titulo: "HBO", precio: 868 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [3330, 2664, 2585,2331, 2000],
+        porcentajes: ["0%", "20%","22.4%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [4250, 3400, 2975,2550 ,2150],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+
+      {
+        titulo: "Internet 200MB",
+        precio: [5180,2930],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6090,3440],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 500MB",
+        precio: 19550,
+      },
+      {
+        titulo: "Internet 10MB",
+        precio: 2130,
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2250,
+      },
+      {
+        titulo: "Internet 30MB",
+        precio: 3100,
+        
+      },
+     
+    ],
+  },
+  listaPalpala: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [1700, 1360, 1190, 1020],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [570, 399, 350,342],
+        porcentajes: ["0%", "30%", "39%","40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 300,
+
+      },
+      { titulo: "Futbol", precio: 1535 },
+      { titulo: "HBO", precio: 868 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [2630,2366 ,2104, 1841, 1580],
+        porcentajes: ["0%","10%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 100MB",
+        precio: [4250, 3400, 2975,2550 ,2150],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+      {
+        titulo: "Internet 200MB",
+        precio: [5180,2930],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6090,3440],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 20MB",
+        precio: 2370,
+      },
+    ],
+  },
+};
 /*********************************
  * Septiembre**
  **********************************/
