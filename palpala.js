@@ -420,6 +420,7 @@ let localidad = document.querySelector("#localidad");
 let listaMes = document.querySelector("#lista");
 
 let obListas = {
+  listaOct2022,
   listaSep2022,
   listaJun2022,
   listaMar2022
