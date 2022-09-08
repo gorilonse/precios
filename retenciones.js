@@ -11,7 +11,7 @@ const reteSSJ = [['Servicio','Codigo','1ra 30% 6 meses','2da 40% 6 meses','3ra 3
 ['Nuevo 100/50 FTTH Bridge','UI-792','960','962','965']]
 
 const retePalpala = [['Servicio','Codigo','1ra 30% 6 meses','2da 40% 6 meses','3ra 30% 6 meses'],
-['Cable Ftth','UI-580','554','949','954'],
+['Cable Ftth','UI-580','552','949','954'],
 ['4go HD','UI-716','797','971','974'],
 ['50/25 FTTH Router','UI-719','734','950','955'],
 ['50/25 FTTH Bridge','UI-718','735','951','956'],
