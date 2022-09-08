@@ -16,7 +16,7 @@
           crossorigin
         />
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <script src="session.js"></script>
+        <!-- <script src="session.js"></script> -->
         <title>Retenciones</title>
 </head>
 <body>
@@ -31,16 +31,25 @@
       <div class="content" style="width: 900px;">
         <h1>Políticas Manuales</h1>
         <h3>Retenciones Septiembre 2022</h3>
-
-        <div class="table-container">
-          <h2>San Salvador</h2>
-          <table class="retenciones" id="reteSSJ">
-           
-          </table>
-          <div class="table-container ">
-            <h2>Palpala</h2>
-            <table class="palpala retenciones" id="retePalpala">
-            </table>
+        <div id="botonera" class="botonera">
+          <button id="retencion" class="noactive btnActive">Retenciones</button>
+          <button id="venta" class="noactive">Venta</button>
+          <button id="competencia" class="noactive">Competencia</button>
+          <button id="migracion" class="noactive">Migración</button>
+          <button id="anual" class="noactive">Pago Anual</button>
+          <button id="premium" class="noactive">Premium</button>
+        </div>
+        <div id="lugar">
+          <button id="SSJ" class="btnssj">San Salvador</button>
+          <button id="Palpala" class="btnpalpala noactive">Palpala</button>
+        </div>
+        <div class="contenedor">
+          <div class="tablaWrapper" id="tableSanSJ">
+            <table class="retenciones" id="tablet"></table>
+          </div>
+          <div id="alerta"></div>
+        </div>
+        
     </div>
 </body>
 <script src="retenciones.js"></script>

@@ -256,3 +256,44 @@ table.retenciones tr:hover{
   font-size: 2rem;
   color: #b92239;
 }
+.nuevo{
+  font-weight: bold;
+}
+.btnssj{
+  color: #fff;
+  font-size: 1.01em;
+  background-color: #49a877;
+  border-radius: 5px 5px 0 0;
+  padding: 1em;
+  border: none;
+  margin-left: 1em ;
+  
+}
+.btnpalpala{
+  color: #fff;
+  font-size: 1.01em;
+  background-color: #e48a4e;
+  border-radius: 5px 5px 0 0;
+  padding: 1em 1.5em;
+  border: none;
+}
+
+
+.botonera > button{
+  margin-left: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.01em;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 3px;
+}
+
+.noactive{
+  color: rgb(214, 214, 214);
+  background-color: #6d6d6d;
+}
+.btnActive{
+  background: #8f496e;
+}
+
