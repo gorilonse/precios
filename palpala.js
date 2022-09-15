@@ -31,9 +31,14 @@
         porcentajes: ["0%", "20%","22.4%", "30%", "40%"],
       },
       {
-        titulo: "Internet 100MB",
+        titulo: "UI-776 Internet 100MB",
         precio: [4250, 3400, 2975,2550 ,2150],
         porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+      {
+        titulo: "UI-740 Internet 100MB",
+        precio: [4600, 3680, 3220,2760],
+        porcentajes: ["0%", "20%", "30%", "40%"],
       },
 
       {
@@ -94,9 +99,14 @@
         porcentajes: ["0%","10%", "20%", "30%", "40%"],
       },
       {
-        titulo: "Internet 100MB",
+        titulo: "UI-788	Internet 100MB",
         precio: [3780, 3024, 2646,2268 ,1890],
         porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+     {
+        titulo: "UI-721	Internet 100MB",
+        precio: [4060 ,3248 ,2842 ,2436],
+        porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
         titulo: "Internet 200MB",
