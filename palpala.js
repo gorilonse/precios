@@ -57,11 +57,11 @@
       },
       {
         titulo: "Internet 10MB",
-        precio: 2130,
+        precio: 2450,
       },
       {
         titulo: "Internet 20MB",
-        precio: 2250,
+        precio: 2580,
       },
       {
         titulo: "Internet 30MB",
