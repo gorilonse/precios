@@ -73,7 +73,7 @@ a:active {
   height: 550px;
   background-color: rgb(240, 240, 240);
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1.3fr;
   grid-gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
   font-size: 22px;
