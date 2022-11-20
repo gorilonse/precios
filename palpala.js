@@ -1,4 +1,3 @@
-
 /*********************************
  * Diciembre**
  **********************************/
@@ -7,12 +6,12 @@
     Cable: [
       {
         titulo: "TV",
-        precio: [2790, 2232, 1953, 1674],
+        precio: [2790, 2232, 1953, 1670],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
         titulo: "Go/IPTV",
-        precio: [740,592, 518, 444],
+        precio: [740,592, 518, 440],
         porcentajes: ["0%", "30%", "40%"],
       },
       {
@@ -22,11 +21,12 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
+{ titulo: "IP Fija", precio: 3200 },
     ],
     Internet: [
       {
         titulo: "Internet 50MB",
-        precio: [3790, 3032, 2941,2653, 2274],
+        precio: [3790, 3032, 2941,2653, 2150],
         porcentajes: ["0%", "20%","22.4%", "30%", "40%"],
       },
       {
@@ -42,12 +42,12 @@
 
       {
         titulo: "Internet 200MB",
-        precio: [5900,3245],
+        precio: [5900,2930],
         porcentajes: ["0%","45%"],
       },
       {
         titulo: "Internet 300MB",
-        precio: [6940,3817],
+        precio: [6940,3440],
         porcentajes: ["0%","45%"],
       },
       {
@@ -74,7 +74,7 @@
     Cable: [
       {
         titulo: "TV",
-        precio: [1930, 1544, 1351, 1158],
+        precio: [1930, 1544, 1351, 1160],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
@@ -90,11 +90,12 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
+{ titulo: "IP Fija", precio: 3200 },
     ],
     Internet: [
       {
         titulo: "Internet 50MB",
-        precio: [2990,2691,2392 ,2093, 1794],
+        precio: [2990,2691,2392 ,2093, 1790],
         porcentajes: ["0%","10%", "20%", "30%", "40%"],
       },
       {
