@@ -1,5 +1,129 @@
 
+/*********************************
+ * Diciembre**
+ **********************************/
+ const listaDic2022 = {
+  listaSalvador: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [2790, 2232, 1953, 1674],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go/IPTV",
+        precio: [592, 518, 444],
+        porcentajes: ["0%", "30%", "40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 420,
+      },
+      { titulo: "Futbol", precio: 1535 },
+      { titulo: "HBO", precio: 868 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [3790, 3032, 2941,2653, 2274],
+        porcentajes: ["0%", "20%","22.4%", "30%", "40%"],
+      },
+      {
+        titulo: "UI-776 Internet 100MB",
+        precio: [4250, 3400, 2975,2550 ,2150],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+      {
+        titulo: "migrar/UI-740 Internet 100MB",
+        precio: [5250, 4200, 3675,3150],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
 
+      {
+        titulo: "Internet 200MB",
+        precio: [5900,3245],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6940,3817],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 500MB",
+        precio: 22280,
+      },
+      {
+        titulo: "migrar/Internet 10MB",
+        precio: 2790,
+      },
+      {
+        titulo: "migrar/Internet 20MB",
+        precio: 2940,
+      },
+      {
+        titulo: "migrar/Internet 30MB",
+        precio: 3100,
+        
+      },
+     
+    ],
+  },
+  listaPalpala: {
+    Cable: [
+      {
+        titulo: "TV",
+        precio: [1930, 1544, 1351, 1158],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Go",
+        precio: [650, 520, 455, 390],
+        porcentajes: ["0%", "30%", "39%","40%"],
+      },
+      {
+        titulo: "Go Adicional",
+        precio: 340,
+
+      },
+      { titulo: "Futbol", precio: 1535 },
+      { titulo: "HBO", precio: 868 },
+      { titulo: "Adultos", precio: 300 },
+    ],
+    Internet: [
+      {
+        titulo: "Internet 50MB",
+        precio: [2990,2691,2392 ,2093, 1794],
+        porcentajes: ["0%","10%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "UI-788	Internet 100MB",
+        precio: [4310, 3448, 3017, 2586 , 2155],
+        porcentajes: ["0%", "20%", "30%", "40%","50%"],
+      },
+     {
+        titulo: "UI-721	Internet 100MB",
+        precio: [4060 ,3248 ,2842 ,2436],
+        porcentajes: ["0%", "20%", "30%", "40%"],
+      },
+      {
+        titulo: "Internet 200MB",
+        precio: [5890, 2651],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "Internet 300MB",
+        precio: [6940,3123],
+        porcentajes: ["0%","45%"],
+      },
+      {
+        titulo: "migrar/Internet 20MB",
+        precio: 2700,
+      },
+    ],
+  },
+};
 /*********************************
  * Octubre**
  **********************************/
@@ -430,6 +554,7 @@ let localidad = document.querySelector("#localidad");
 let listaMes = document.querySelector("#lista");
 
 let obListas = {
+  listaDic2022,
   listaOct2022,
   listaSep2022,
   listaJun2022,
