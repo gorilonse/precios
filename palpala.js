@@ -21,7 +21,7 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
-{ titulo: "IP Fija", precio: 3200 },
+      { titulo: "IP Fija", precio: 3200 },
     ],
     Internet: [
       {
@@ -42,13 +42,13 @@
 
       {
         titulo: "Internet 200MB",
-        precio: [5900,2930],
-        porcentajes: ["0%","45%"],
+        precio: [5900,3650],
+        porcentajes: ["0%","40%"],
       },
       {
         titulo: "Internet 300MB",
-        precio: [6940,3440],
-        porcentajes: ["0%","45%"],
+        precio: [6940,4290],
+        porcentajes: ["0%","40%"],
       },
       {
         titulo: "Internet 500MB",
@@ -110,13 +110,13 @@
       },
       {
         titulo: "Internet 200MB",
-        precio: [5890, 2651],
-        porcentajes: ["0%","45%"],
+        precio: [5890, 3640],
+        porcentajes: ["0%","40%"],
       },
       {
         titulo: "Internet 300MB",
-        precio: [6940,3123],
-        porcentajes: ["0%","45%"],
+        precio: [6940,4290],
+        porcentajes: ["0%","40%"],
       },
       {
         titulo: "migrar/Internet 20MB",
