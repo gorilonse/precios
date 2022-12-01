@@ -190,7 +190,7 @@
       },
       {
         titulo: "Internet 30MB",
-        precio: 3100,
+        precio: ,
         
       },
      
@@ -230,7 +230,7 @@
       },
      {
         titulo: "UI-721	Internet 100MB",
-        precio: [4060 ,3248 ,2842 ,2436],
+        precio: [4628 ,3248 ,2842 ,2436],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
