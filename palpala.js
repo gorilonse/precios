@@ -190,7 +190,7 @@
       },
       {
         titulo: "Internet 30MB",
-        precio: ,
+        precio: 3080,
         
       },
      
