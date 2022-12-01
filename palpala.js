@@ -21,7 +21,7 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
-      { titulo: "IP Fija", precio: 3200 },
+      { titulo: "IP Fija", precio: 3600 },
     ],
     Internet: [
       {
