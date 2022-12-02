@@ -64,7 +64,7 @@
       },
       {
         titulo: "migrar/Internet 30MB",
-        precio: 3100,
+        precio: 3080,
         
       },
      
