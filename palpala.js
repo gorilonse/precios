@@ -21,7 +21,7 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
-      { titulo: "IP Fija", precio: 3200 },
+      { titulo: "IP Fija", precio: 3600 },
     ],
     Internet: [
       {
@@ -90,7 +90,7 @@
       { titulo: "Futbol", precio: 1535 },
       { titulo: "HBO", precio: 868 },
       { titulo: "Adultos", precio: 300 },
-{ titulo: "IP Fija", precio: 3200 },
+{ titulo: "IP Fija", precio: 3600 },
     ],
     Internet: [
       {
@@ -105,7 +105,7 @@
       },
      {
         titulo: "UI-721	Internet 100MB",
-        precio: [4060 ,3248 ,2842 ,2436],
+        precio: [4628 ,3702,4 ,3239,6 ,3239,6],
         porcentajes: ["0%", "20%", "30%", "40%"],
       },
       {
